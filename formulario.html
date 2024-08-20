@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Usuário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Cadastro de Usuário</h2>
+    <form id="userForm">
+        
+        <!-- Campos do formulário -->
+
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" required>
+        </div>
+        <div class="mb-3">
+            <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+            <input type="date" class="form-control" id="dataNascimento" required>
+        </div>
+        <div class="mb-3">
+            <label for="sexo" class="form-label">Sexo</label>
+            <select class="form-select" id="sexo" required>
+                <option value="">Selecione</option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="nomeMaterno" class="form-label">Nome Materno</label>
+            <input type="text" class="form-control" id="nomeMaterno" required>
+        </div>
+        <div class="mb-3">
+            <label for="cpf" class="form-label">CPF</label>
+            <input type="text" class="form-control" id="cpf" required>
+        </div>
+        <div class="mb-3">
+            <label for="telefoneCelular" class="form-label">Telefone Celular</label>
+            <input type="text" class="form-control" id="telefoneCelular" placeholder="(+55)XX-XXXXXXXX" required>
+        </div>
+        <div class="mb-3">
+            <label for="telefoneFixo" class="form-label">Telefone Fixo</label>
+            <input type="text" class="form-control" id="telefoneFixo" placeholder="(+55)XX-XXXXXXXX">
+        </div>
+        <div class="mb-3">
+            <label for="endereco" class="form-label">Endereço Completo</label>
+            <input type="text" class="form-control" id="endereco" required>
+        </div>
+        <div class="mb-3">
+            <label for="login" class="form-label">Login</label>
+            <input type="text" class="form-control" id="login" required>
+        </div>
+        <div class="mb-3">
+            <label for="senha" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="senha" required>
+        </div>
+        <div class="mb-3">
+            <label for="confirmaSenha" class="form-label">Confirma Senha</label>
+            <input type="password" class="form-control" id="confirmaSenha" required>
+        </div>
+
+        <!-- Botões de Cadastro e Login -->
+        <div class="btn-container">
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <a href="login.html" class="btn btn-secondary">Ir para Login</a>
+        </div>
+    </form>
+</div>
+
+<!-- Toast Container -->
+
+<div class="toast-container"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
