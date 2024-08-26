@@ -3,37 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela Principal </title>
+    <title>Internet</title>
 
     <!-- Bootstrap CSS -->
-
+    
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="internet.css">
 
     <!-- Icones -->
-
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-    <style>
-        body {
-            padding-top: 60px;
-        }
-        .menu-icon {
-            font-size: 24px;
-            margin-right: 10px;
-        }
-        .submenu a {
-            font-size: 14px;
-            padding-left: 40px;
-        }
-    </style>
 </head>
-<body>
+<body class="page-internet">
 
     <!-- Navbar -->
-
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Portal de Serviços</a>
+        <a class="navbar-brand" href="principal.html">Portal de Serviços</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -51,9 +37,6 @@
                         <a class="dropdown-item" href="#">Mobilidade</a>
                     </div>
                 </li>
-
-                <!-- Outros menus principais -->
-            
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -64,44 +47,46 @@
     </nav>
 
     <!-- Conteúdo principal -->
-
-    <div class="container">
+    
+    <div class="container mt-5">
         <div class="row">
-            <div class="col-md-4">
-                <div class="card h-100 text-center">
-                    <div class="card-body d-flex flex-column">
-                        <i class="fas fa-globe fa-3x"></i> <!-- Ícone 1 -->
-                        <h5 class="card-title mt-3">INTERNET</h5>
-                        <p class="card-text flex-grow-1">Solução de internet em Fibra com alta qualidade e disponibilidade</p>
-                        <a href="internet.html" class="btn btn-primary mt-auto">Saiba Mais</a>
+            
+            <!-- Exemplo de Card -->
+            
+            <div class="col-md-6 mb-4">
+                <div class="card border-info">
+                    <div class="card-header bg-info text-white">
+                        <h2>Internet Residencial</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Experimente a melhor conexão para sua casa, com alta velocidade e estabilidade.</p>
+                        <a href="#" class="btn btn-info">Saiba Mais</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100 text-center">
-                    <div class="card-body d-flex flex-column">
-                        <i class="fas fa-network-wired fa-3x"></i> <!-- Ícone 2 -->
-                        <h5 class="card-title mt-3">TELEFONIA</h5>
-                        <p class="card-text flex-grow-1">Solução inteligente de PABX IP na núvem para sua telefonia fixa</p>
-                        <a href="telefonia.html" class="btn btn-primary mt-auto">Saiba Mais</a>
+            <div class="col-md-6 mb-4">
+                <div class="card border-success">
+                    <div class="card-header bg-success text-white">
+                        <h2>Internet Empresarial</h2>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 text-center">
-                    <div class="card-body d-flex flex-column">
-                        <i class="fas fa-headphones fa-3x"></i> <!-- Ícone 3 -->
-                        <h5 class="card-title mt-3">MOBILIDADE</h5>
-                        <p class="card-text flex-grow-1">Monte planos de celular personalizados para a sua empresa e pague apenas pelo que precisa</p>
-                        <a href="mobilidade.html" class="btn btn-primary mt-auto">Saiba Mais</a>
+                    <div class="card-body">
+                        <p>Soluções robustas para manter seu negócio sempre conectado e produtivo.</p>
+                        <a href="#" class="btn btn-success">Saiba Mais</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <!-- Footer -->
+    
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+        <a href="#" class="text-white">Política de Privacidade</a>
+    </footer>
 
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

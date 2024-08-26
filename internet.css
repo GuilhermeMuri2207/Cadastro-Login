@@ -1,0 +1,158 @@
+/* Estilos Globais */
+
+html, body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    padding-top: 60px;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Conteúdo principal ocupará o espaço restante */
+.container {
+    flex: 1;
+}
+
+/* Navbar (Comum para ambas as páginas) */
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    background-color: #495057;
+    border-radius: 5px;
+}
+
+/* Dropdown menu (Comum) */
+
+.dropdown-menu .dropdown-item {
+    font-size: 0.9rem;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Botão Sair (Comum) */
+
+.navbar-nav .nav-item .nav-link {
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #f8f9fa;
+}
+
+/* Cards (Comum) */
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card i {
+    color: #007bff; /* Cor do ícone */
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #6c757d;
+}
+
+/* Botão Saiba Mais (Comum) */
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Ajustes de Responsividade (Comum) */
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
+
+/* Estilos Específicos da Página Internet */
+
+.page-internet header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.page-internet .card {
+    border: 1px solid #007bff;
+}
+
+.page-internet .card-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.page-internet .card .btn {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.page-internet .card .btn:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Rodapé fixado ao final da página */
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
