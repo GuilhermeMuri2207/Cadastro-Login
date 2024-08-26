@@ -5,25 +5,30 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     let senha = document.getElementById("senha").value.trim();
     
     // Recupera os dados armazenados no localStorage durante o cadastro
+
     let storedLogin = localStorage.getItem("userLogin");
     let storedSenha = localStorage.getItem("userSenha");
     
     // Verifica se os campos login e senha foram preenchidos corretamente
+
     if (login === "" || senha === "") {
         showToast("Por favor, preencha todos os campos.", "error");
         return;
     }
     
     // Verifica se o login e a senha correspondem aos valores armazenados
+
     if (login === storedLogin && senha === storedSenha) {
         showToast("Login realizado com sucesso!", "success");
 
         // Armazena o login do usuário logado no localStorage
+
         localStorage.setItem("loggedUser", login);
         
         // Redireciona para a Tela 3 após um breve intervalo
+
         setTimeout(function() {
-            window.location.href = "tela-principal.html";
+            window.location.href = "principal.html";
         }, 1500);
     } else {
         showToast("Login ou senha incorretos.", "error");
