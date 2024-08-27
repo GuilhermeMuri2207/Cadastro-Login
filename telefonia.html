@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Internet</title>
-
-    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços de Telefonia</title>
     
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="internet.css">
+    <!-- Bootstrap CSS -->
 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="telefonia.css">
+    
     <!-- Icones -->
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
-<body class="page-internet">
+<body class="page-telefonia">
 
-    <!-- Navbar -->
+    <!-- Navbar (Comum) -->
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="principal.html">Portal de Serviços</a>
@@ -29,7 +30,7 @@
                         <i class="menu-icon fas fa-concierge-bell"></i> Serviços
                     </a>
                     <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                        <a class="dropdown-item" href="#">Internet</a>
+                        <a class="dropdown-item" href="internet.html">Internet</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="telefonia.html">Telefonia</a>
                         <div class="dropdown-divider"></div>
@@ -45,46 +46,60 @@
         </div>
     </nav>
 
-    <!-- Conteúdo principal -->
+    <!-- Conteúdo Principal -->
     
-    <div class="container mt-5">
+    <section class="container my-5">
         <div class="row">
-            
-            <!-- Exemplo de Card -->
-            
+    
+            <!-- Card 1 -->
+    
             <div class="col-md-6 mb-4">
-                <div class="card border-info">
-                    <div class="card-header bg-info text-white">
-                        <h2>Internet Residencial</h2>
+                <div class="card h-100">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="card-title"> <i class="fas fa-signal"></i> Telefonia Empresarial</h2>
                     </div>
                     <div class="card-body">
-                        <p>Experimente a melhor conexão para sua casa, com alta velocidade e estabilidade.</p>
-                        <a href="#" class="btn btn-info">Saiba Mais</a>
+                        <p>Oferecemos soluções avançadas de telefonia empresarial com alta confiabilidade.</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
                     </div>
                 </div>
             </div>
+    
+            <!-- Card 2 -->
+    
             <div class="col-md-6 mb-4">
-                <div class="card border-success">
-                    <div class="card-header bg-success text-white">
-                        <h2>Internet Empresarial</h2>
+                <div class="card h-100">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="card-title"> <i class="fas fa-cloud"></i> Telefonia Residencial</h2>
                     </div>
                     <div class="card-body">
-                        <p>Soluções robustas para manter seu negócio sempre conectado e produtivo.</p>
-                        <a href="#" class="btn btn-success">Saiba Mais</a>
+                        <p>Soluções de telefonia fixa com planos acessíveis para residências com alta confiabilidade.</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Footer -->
+    <section class="contact-section text-center py-5">
+        <div class="container">
+            <h2 class="mb-4">Entre em Contato</h2>
+            <p class="mb-4">Precisa de mais informações? Fale conosco pelo WhatsApp!</p>
+            <a href="https://api.whatsapp.com/send?phone=+5521980726041&text=Olá, gostaria de mais informações sobre os serviços de telefonia." 
+               class="btn btn-whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> Fale Conosco no WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
     
     <footer class="bg-dark text-white text-center py-4">
         <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
         <a href="#" class="text-white">Política de Privacidade</a>
     </footer>
 
-    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <!-- Scripts -->
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
