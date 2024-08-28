@@ -76,7 +76,9 @@ function showToast(message, type = 'success') {
     bsToast.show();
 
     // Remover o toast após desaparecer
+
     toast.addEventListener('hidden.bs.toast', () => {
         toastContainer.removeChild(toast);
     });
 }
+
